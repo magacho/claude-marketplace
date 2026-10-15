@@ -1,0 +1,29 @@
+{
+  "name": "magacho",
+  "owner": { "name": "Flavio Magacho" },
+  "metadata": {
+    "description": "Plugins e skills do Flavio Magacho para o Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "statusbar",
+      "description": "Statusline de duas linhas: diretório, branch, modelo, modo, plano, contexto, franquias de uso, org e identidade git. Depois de instalar, rode /statusbar:setup.",
+      "source": { "source": "github", "repo": "magacho/claude-code-statusbar" }
+    },
+    {
+      "name": "vibe",
+      "description": "Refine demands into build-ready specs (spec), design or refactor code into clean low-coupling modules (modular), and audit a codebase 360° into a Bemobi HTML deck (360).",
+      "source": { "source": "git-subdir", "url": "https://github.com/magacho/vibe-mp-magacho.git", "path": "plugins/vibe" }
+    },
+    {
+      "name": "harness",
+      "description": "Audita (read-only) e instala harness em repositórios novos e legados: hooks, permissões, catraca de violações e CLAUDE.md hierárquico.",
+      "source": { "source": "git-subdir", "url": "https://github.com/magacho/harness-skills.git", "path": "plugin" }
+    },
+    {
+      "name": "magents",
+      "description": "Compare the real cost-to-your-door of a product across AliExpress, Mercado Livre, Shopee and Amazon — including Brazilian import tax (Remessa Conforme) and shipping — by driving the live sites with a stealth browser that reuses the user's own logged-in session. Runs locally.",
+      "source": { "source": "git-subdir", "url": "https://github.com/magacho/agents-sys-magacho.git", "path": "plugins/magents" }
+    }
+  ]
+}
