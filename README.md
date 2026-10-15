@@ -24,5 +24,6 @@ Marketplaces → `magacho`.
 ## Adicionar um plugin
 
 Acrescente uma entrada em `.claude-plugin/marketplace.json` apontando para o repositório do
-plugin (`"source": "github"` quando o plugin está na raiz, `"git-subdir"` quando está numa
-subpasta) e valide com `claude plugin validate .` antes do commit.
+plugin pela URL HTTPS (`"source": "url"` quando o plugin está na raiz, `"git-subdir"` quando está
+numa subpasta). Evite `"source": "github"`: com SSH configurado na máquina ele clona via SSH, e
+quem não tem chave cadastrada no GitHub recebe `Permission denied (publickey)`. e valide com `claude plugin validate .` antes do commit.
